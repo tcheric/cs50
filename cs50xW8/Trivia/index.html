@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Trivia!</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- your content here... -->
+  <header><h1>Trivia!</h1></header>
+  <section>
+    <h2>Part 1: Multiple Choice</h2>
+    <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+    <button class="p1" onclick="handlep1(this.id)" id="1">6 people 1 sheep</button>
+    <button class="p1" onclick="handlep1(this.id)" id="2">3 people 1 sheep</button>
+    <button class="p1" onclick="handlep1(this.id)" id="3">1 people 1 sheep</button>
+    <button class="p1" onclick="handlep1(this.id)" id="4">1 people 3 sheep</button>
+    <button class="p1" onclick="handlep1(this.id)" id="5">1 people 6 sheep</button>
+    <span id="p1mark"></span>
+  </section>
+  <section>
+    <h2>Part 2: Free Response</h2>
+    <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+    <div class="input-container">    
+      <input type="text" type="text">
+      <button onclick="handlep2()" class="p2">
+        Check Answer
+      </button>
+    </div>
+    <span id="p2mark"></span>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
