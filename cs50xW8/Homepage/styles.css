@@ -1,16 +1,16 @@
 @font-face {
   font-family: Didot-R;
-  src: url(Didot-Regular.ttf);
+  src: url(fonts/Didot-Regular.ttf);
 }
 
 @font-face {
   font-family: Futura-M;
-  src: url(futura-medium-bt.ttf);
+  src: url(fonts/futura-medium-bt.ttf);
 }
 
 @font-face {
   font-family: Futura-L;
-  src: url(futura-light-bt.ttf);
+  src: url(fonts/futura-light-bt.ttf);
 }
 
 html[scroll-top="true"] {
@@ -93,8 +93,8 @@ header {
   width: auto;
   margin-inline: 24px;
   padding-top: 6px;
-  font-size: 24px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  font-family: 'Lora', serif;
   color: black;
 }
 
@@ -144,7 +144,7 @@ header {
 /* text-body section */
 #text-body {
   width: 100%;
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(247, 247, 247);
   height: 900px;
   padding-top: 20px;
   position: relative;
@@ -164,7 +164,8 @@ header {
 }
 
 #text-body h3 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;
+  font-weight: normal;
 }
 
 #a1-text {
@@ -213,7 +214,7 @@ header {
 
 #text-body article form {
   flex: 0 1 570px;
-  background-color: rgb(184, 187, 216);
+  background-color: rgb(174, 178, 213);
   margin: 20px;
   height: 360px;
   border-bottom-right-radius: 15px;
@@ -226,15 +227,15 @@ header {
 
 form h3{
   text-align: center;
-  font-size: 24px;
+  font-size: 23px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
 form #form-header{
-  background-color: rgb(82, 82, 82);
+  background-color: rgb(60, 60, 58);
   width: 100%;
-  flex: 0 0 100px;
+  flex: 0 0 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +305,6 @@ form textarea {
 
 #a2-text li:hover {
   font-weight: bold;
-  font-size: 19px;
 }
 
 #list-last {
