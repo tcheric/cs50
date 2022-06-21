@@ -54,17 +54,26 @@
     </article>
 
     <article>
-      <form>
+      <form id="a2form" onsubmit="showMsgConfirm()">
         <div id="form-header">
           <h3>Talk to a specialist defence solicitor today:</h3>
         </div>
         <div id="form-input">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
           <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" >Send</button>
+        </div>  
+        <div id="form-popup">
+          <div id="popup-header" class="flex-container">
+            Thank You
+          </div>
+          <div id="popup-body" class="flex-container">
+            <p>ur message haz been send 2 our litter box >:0)</p>
+          </div>
         </div>  
       </form>
 
