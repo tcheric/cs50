@@ -1,16 +1,16 @@
 @font-face {
   font-family: Didot-R;
-  src: url(fonts/Didot-Regular.ttf);
+  src: url(../fonts/Didot-Regular.ttf);
 }
 
 @font-face {
   font-family: Futura-M;
-  src: url(fonts/futura-medium-bt.ttf);
+  src: url(../fonts/futura-medium-bt.ttf);
 }
 
 @font-face {
   font-family: Futura-L;
-  src: url(fonts/futura-light-bt.ttf);
+  src: url(../fonts/futura-light-bt.ttf);
 }
 
 html[scroll-top="true"] {
@@ -34,7 +34,7 @@ body {
 .header-space {
   width: 100%;
   height: 95px;
-  background-color: rgb(255, 253, 251);
+  background-color: rgb(255, 255, 252);
 }
 
 h1 {
@@ -93,7 +93,7 @@ header {
   width: auto;
   margin-inline: 24px;
   padding-top: 6px;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Lora', serif;
   color: black;
 }
@@ -133,11 +133,12 @@ header {
   z-index: 5;
   position: absolute;
   margin: 0;
+  margin-top: 5px;
   left: 50%;
   top: 200px;
   text-align: center;
   transform: translateX(-50%);
-  font-size: 26px;
+  font-size: 25px;
   width: 100%;
 }
 
@@ -169,8 +170,8 @@ header {
 }
 
 #a1-text {
-  flex: 0 0 560px;
-  padding: 10px;
+  flex: 0 0 545px;
+  padding: 15px 7px 15px 18px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -183,7 +184,7 @@ header {
 }
 
 #text-body article p {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.1;
   margin-bottom: 0;
 }
@@ -197,7 +198,7 @@ header {
   height: 320px;
   width: 360px;
   flex: 0 1 360px;
-  margin: 20px 20px 0 20px;
+  margin: 20px 30px 0 20px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -215,8 +216,9 @@ header {
 #a2form {
   flex: 0 1 570px;
   background-color: rgb(174, 178, 213);
-  margin: 20px;
-  height: 360px;
+  margin: 30px;
+  margin-right: 5px;
+  height: 350px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   display: flex;
@@ -334,13 +336,6 @@ form #form-popup {
   }
 }
 
-/* #form-popup #fade-in {
-  visibility: hidden;
-  opacity: 1;
-  transition: opacity s; 
-  transition-duration: 2s;
-} */
-
 form #form-popup #popup-header{
   width: 100%;
   height: 40px;
@@ -395,7 +390,7 @@ form #form-popup #popup-body p{
 }
 
 #a2-text li {
-  border-top: 1px solid rgb(90, 96, 114);
+  border-top: 1px solid rgb(126, 130, 146);
   padding: 8px;
   font-size: 20px;
   cursor: pointer;
@@ -406,7 +401,7 @@ form #form-popup #popup-body p{
 }
 
 #list-last {
-  border-bottom: 1px solid rgb(90, 96, 114);
+  border-bottom: 1px solid rgb(126, 130, 146);
 }
 
 /* footer section */
