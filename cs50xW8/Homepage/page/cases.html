@@ -14,22 +14,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <script src="../webComponents/Header.js"></script>
+  <script src="../webComponents/Footer.js"></script>
+  <script src="https://unpkg.com/phosphor-icons@1.4.1"></script>
 </head>
 
 <body>
   <!-- your content here... -->
-  <header>
-    <a href="../index.html">
-      <h1>Meow <span>&</span> Co.</h1>
-    </a>
-    <div class="header-buttons">
-      <div class="arrow-down"></div>
-      <a href="expertise.html">Expertise</a>
-      <a href="cases.html">Cases</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </header>
-  <div class="header-space"></div>
+  <header-component></header-component>
+  <!-- <div class="header-space"></div> -->
 
+  <section id="vid-text">
+    <div id="videoContainer">
+      <video id="toonces" autoplay muted >
+        <source src="toonces-edited.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <div id="media-buttons" class="flex-container">
+        <button id="playback" class="media flex-container" onclick="togglePlayPause()" type="button">
+          <i class="ph-pause"></i>
+        </button>
+        <button id="volume" class="media" onclick="toggleVolume()" type="button">
+          <i class="ph-speaker-simple-slash"></i>
+        </button>
+      </div>
+    </div>
+    <div id="text-overlay">
+      <h2>Case Reports <br>from <br>Meow & Co.</h2>
+    </div>
+  </section>
+
+
+
+  <footer-component></footer-component>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/cases.js"></script>
 </body>

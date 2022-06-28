@@ -20,7 +20,7 @@ html[scroll-top="true"] {
 }
 
 html[scroll-top="false"] {
-  --header-buttons: rgb(161, 164, 200);
+  --header-buttons: rgb(149, 151, 187);
   --header: rgb(239, 231, 207);
   --shadow: 0px 1px 3px #d5d5d5;
 }
@@ -30,7 +30,7 @@ body {
   margin: 0;
 }
 
-/* header section */
+/* navbar section */
 .header-space {
   width: 100%;
   height: 95px;
@@ -89,11 +89,10 @@ header {
 
 .header-buttons a{
   text-decoration: none;
-  color: rgb(39, 37, 33);
   width: auto;
   margin-inline: 24px;
   padding-top: 6px;
-  font-size: 18px;
+  font-size: 17px;
   font-family: 'Lora', serif;
   color: black;
 }
@@ -114,6 +113,22 @@ header {
   width: 100%;
   position: absolute;
   filter: grayscale(70%) blur(3px) brightness(115%);
+  animation-duration: 0.5s;
+  animation-name: imgslidein;
+}
+
+@keyframes imgslidein {
+  from {
+    margin-top: 5px;
+    opacity: 0;
+    height: 460px;
+  }
+
+  to {
+    margin-top: 0;
+    opacity: 1;
+    height: 450px;
+  }
 }
 
 .container h2 {
@@ -477,6 +492,10 @@ footer {
 
 #footer-flex div span:hover {
   color: rgb(62, 54, 45);
+}
+
+#bottom-right-logo {
+  cursor: default;
 }
 
 #bottomest-text {

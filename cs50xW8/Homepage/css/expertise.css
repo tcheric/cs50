@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Didot-R;
+  src: url(../fonts/Didot-Regular.ttf);
+}
+
+/* Img-text section */
+.container {
+  height: 590px;
+  position: relative;
+}
+
+#top-image {
+  height: 590px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  filter: grayscale(40%) blur(1px);
+  animation-duration: 0.7s;
+  animation-name: imgslidein;
+}
+
+@keyframes imgslidein {
+  from {
+    opacity: 0;
+    height: 600px;
+    filter: blur(0px);
+  }
+
+  to {
+    opacity: 1;
+    height: 590px;
+    filter: grayscale(40%) blur(1px);
+  }
+}
+
+.container h2 {
+  font-family: Didot-R, Helvetica, Arial, sans-serif;
+  font-family: Lucida, serif;
+  z-index: 5;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 275px;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  font-weight: normal;
+  color: rgb(39, 34, 28);
+}
+
+/* Articles section */
+
+.left-text {
+  flex: 0 0 545px;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 7px 15px 18px;
+  height: 400px;
+}
+
+.left-text p {
+  text-align: left;
+}
+
+.right-text { 
+  flex: 0 0 545px;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px 26px 15px 7px;
+  height: 400px;
+}
+
+#text-body #right-img {
+  margin: 20px 10px 0px 40px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* .right-img {
+  margin: 20px 20px 0px 30px;
+} */
+
+article p {
+  font-size: 19px;
+  line-height: 1.1;
+  margin-bottom: 0;
+  margin-left: 15px;
+  text-align: left;
+}
+
+article h3 {
+  font-size: 1.3em;
+  margin: 0;
+  margin-bottom: 6px;
+}
