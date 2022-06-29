@@ -1,0 +1,44 @@
+/* Img-text section */
+.container {
+  height: 590px;
+  position: relative;
+}
+
+#top-image {
+  height: 590px;
+  width: 100%;
+  /* object-fit: cover; */
+  position: absolute;
+  filter: grayscale(30%) blur(3px);
+  animation-duration: 0.7s;
+  animation-name: imgslidein;
+}
+
+@keyframes imgslidein {
+  from {
+    opacity: 0;
+    height: 600px;
+    filter: grayscale(0%) blur(0px);
+  }
+
+  to {
+    opacity: 1;
+    height: 590px;
+    filter: grayscale(30%) blur(3px);
+  }
+}
+
+.container h2 {
+  font-family: Didot-R, Helvetica, Arial, sans-serif;
+  font-family: Lucida, serif;
+  z-index: 5;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 275px;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  font-weight: normal;
+  color: rgb(39, 34, 28);
+}

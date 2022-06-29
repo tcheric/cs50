@@ -419,6 +419,15 @@ form #form-popup #popup-body p{
   border-bottom: 1px solid rgb(126, 130, 146);
 }
 
+#a2-text li a{
+  color: black;
+}
+
+#a2-text li a:visited{
+  text-decoration: none;
+  color: black;
+}
+
 /* footer section */
 #award-banner {
   width: 100%;
