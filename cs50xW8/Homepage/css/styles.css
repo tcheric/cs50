@@ -20,8 +20,8 @@ html[scroll-top="true"] {
 }
 
 html[scroll-top="false"] {
-  --header-buttons: rgb(149, 151, 187);
-  --header: rgb(239, 231, 207);
+  --header-buttons: rgb(135, 135, 169);
+  --header: rgb(241, 232, 207);
   --shadow: 0px 1px 3px #d5d5d5;
 }
 

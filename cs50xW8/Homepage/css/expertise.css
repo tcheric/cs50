@@ -154,6 +154,13 @@ html {
   height: 400px;
 }
 
+.right-text p{ 
+  flex: 0 0 240px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 #text-body #right-img {
   margin: 20px 10px 0px 40px;
   border-top-right-radius: 15px;
