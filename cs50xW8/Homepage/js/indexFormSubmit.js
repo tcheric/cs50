@@ -27,10 +27,3 @@ const showMsgConfirm = () => {
     popup.classList.remove("go")
   }, 2500)
 }
-
-// cat tax investigations
-// catnip possession
-// kidnapping
-// cat burglary
-// stalking
-// Starting a bushfire.Starting a bushfire.Starting a bushfire.
