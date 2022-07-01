@@ -10,13 +10,14 @@
   <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
 
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/cases.css">
   <link rel="stylesheet" href="../css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons@1.4.1"></script>
 
-  <script src="../webComponents/Header.js"></script>
   <script src="../webComponents/Footer.js"></script>
 
 </head>
@@ -24,8 +25,48 @@
 <body>
   <!-- your content here... -->
   <header-component></header-component>
-  <div class="header-space"></div>
+  
+  <section id="contact-header">
+    <div id="empty-space"></div>
+    <div id="contact-details">
+      <div class="detail-info">
+        <h3>Address</h3>
+        <p>
+          52 Oxford St<br>Sydney NSW Australia
+        </p>
+      </div>
+      <div class="detail-info">
+        <h3>Contact Info</h3>
+        <p>
+          <span>T:</span> 0123 4567 8910<br><span>E:</span> contacts@hotmail.com
+        </p>
+      </div>
+      <div class="detail-info">
+        <h3>Social</h3>
+        <div id="logos" class="flex-container">
+          <i class="ph-facebook-logo-bold"></i>
+          <i class="ph-twitter-logo-bold"></i>
+          <i class="ph-linkedin-logo-bold"></i>
+          <i class="ph-twitch-logo-bold"></i>
+        </div>
+      </div>
+    </div>
+    <div id="text-overlay">
+      <h2>Contact Us</h2>
+    </div>
+  </section>
+
+  <section id="map">
+    <iframe 
+      src="https://maps.google.com/maps?q=MEOW+co.t=m&z=17&output=embed" 
+      scrolling="no" 
+      frameborder="0"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+  </section>
 
   <footer-component></footer-component>
   <script src="../js/navbar.js"></script>
+  <script src="../webComponents/Header.js"></script>
 </body>
