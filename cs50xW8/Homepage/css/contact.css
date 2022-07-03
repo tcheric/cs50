@@ -111,8 +111,10 @@ section {
 
 #contact-form label{
   font-family: "Open Sans", Arial, sans-serif;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 4px;
   width: 89%;
+  font-size: 15px;
 }
 
 #contact-form input{
@@ -123,6 +125,7 @@ section {
   box-sizing: border-box;
   color: white;
   width: 89%;
+  font-family: monospace;
 }
 
 #contact-form textarea{
@@ -132,6 +135,8 @@ section {
   box-sizing: border-box;
   color: white;
   width: 89%;
+  font-size: 13px;
+  font-family: monospace;
 }
 
 #contact-form-popup {
